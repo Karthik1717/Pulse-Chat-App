@@ -5,7 +5,6 @@ const asyncHandler = require("express-async-handler");
 //Check if user is logged in
 const protect = asyncHandler(async (req, res, next) => {
 	let token;
-	2;
 	if (
 		req.headers.authorization &&
 		req.headers.authorization.startsWith("Bearer")

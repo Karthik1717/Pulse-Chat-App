@@ -24,9 +24,13 @@ const registerUser = asyncHandler(async (req, res) => {
 		pic,
 	});
 
+	user._id = user._id.toString();
+
+	console.log(user, "user");
+
 	if (user) {
 		res.status(201).json({
-			_id: user._id,
+			_id: user._id.toString(),
 			name: user.name,
 			email: user.email,
 			pic: user.pic,
@@ -66,7 +70,6 @@ const allUsers = asyncHandler(async (req, res) => {
 		  }
 		: {};
 	const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
-
 	res.send(users);
 });
 
