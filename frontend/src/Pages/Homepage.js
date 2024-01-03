@@ -27,7 +27,6 @@ const HomePage = () => {
 				m='40px 0 15px 0'
 				borderRadius='lg'
 				borderWidth='1px'
-				marginTop='150px'
 			>
 				<Text
 					fontSize='4xl'
