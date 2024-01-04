@@ -21,7 +21,7 @@ import animationData from "./animations/typing.json";
 import "./styles.css";
 import ScrollableChat from "./ScrollableChat";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://pulse-ty0v.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
